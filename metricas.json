@@ -1,0 +1,63 @@
+{
+  "umbral": 0.57,
+  "features": [
+    "zona_lat_centro",
+    "zona_lon_centro",
+    "trimestre_del_anio",
+    "n_sismos_t",
+    "n_m45_t",
+    "energia_log_t",
+    "n_sismos_4t",
+    "n_m45_4t",
+    "n_m5_4t",
+    "energia_log_4t",
+    "n_m45_20t",
+    "n_m5_20t",
+    "energia_log_20t",
+    "anomalia_actividad",
+    "tasa_hist_m5_zona",
+    "trim_desde_ultimo_m5",
+    "trim_desde_ultimo_m6",
+    "flag_sin_m6_registrado",
+    "prof_media_4t",
+    "pct_superficial_4t",
+    "gap_medio_4t",
+    "pct_gap_alto_4t",
+    "rms_medio_4t",
+    "flag_sin_eventos_4t",
+    "flag_gap_no_reportado_4t",
+    "n_m45_region_4t"
+  ],
+  "modelo": "Regresión logística",
+  "metricas_valid": {
+    "roc_auc": 0.775,
+    "pr_auc": 0.442,
+    "precision": 0.347,
+    "recall": 0.739,
+    "f1": 0.472,
+    "matriz_confusion": {
+      "TN": 89,
+      "FP": 32,
+      "FN": 6,
+      "TP": 17
+    }
+  },
+  "metricas_test": {
+    "roc_auc": 0.679,
+    "pr_auc": 0.198,
+    "precision": 0.21,
+    "recall": 0.5,
+    "f1": 0.295,
+    "matriz_confusion": {
+      "TN": 114,
+      "FP": 49,
+      "FN": 13,
+      "TP": 13
+    }
+  },
+  "linea_base_test": {
+    "pr_auc": 0.194,
+    "roc_auc": 0.658
+  },
+  "prevalencia_train": 0.133
+}
